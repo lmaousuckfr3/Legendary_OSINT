@@ -52,3 +52,18 @@ This project follows a [Code of Conduct](./CODE_OF_CONDUCT.md). By participating
 
 This project is licensed under [CC0 1.0 Universal](./LICENSE) — no rights reserved.  
 Use, modify, or share freely. Attribution is appreciated.  
+
+---
+
+## 🌐 Website
+
+This repository includes a simple MkDocs site so the collection can be browsed as documentation.
+
+To build and preview locally (requires Python 3.8+):
+
+```powershell
+pip install -r requirements.txt
+mkdocs serve
+```
+
+Pushing to the `main` branch will trigger a GitHub Actions workflow which builds the site and publishes it to GitHub Pages.

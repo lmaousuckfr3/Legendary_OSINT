@@ -1,0 +1,43 @@
+site_name: Legendary OSINT
+site_description: "A curated list of OSINT tools & resources."
+site_author: lmaousuckfr3
+repo_url: https://github.com/lmaousuckfr3/Legendary_OSINT
+site_url: https://lmaousuckfr3.github.io/Legendary_OSINT/
+
+theme:
+  name: material
+  logo: docs/assets/logo.svg
+  favicon: docs/assets/logo.svg
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tabs
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - People Search & Social Media: people-social.md
+  - Aviation Movements & Flight Tracking: aviation.md
+  - Vessel Movements & Shipping: maritime.md
+  - Domains, IPs & Infrastructure: infra-domains.md
+  - Phishing & Email Investigation: phishing-email.md
+  - Malware Analysis & CTI: malware-cti.md
+  - Dark Web & Leaks: darkweb-leaks.md
+  - Search Engines: search-engines.md
+  - Document & File Search: document-file.md
+  - Website Archiving & Caching: archiving-caching.md
+  - Geospatial & Mapping OSINT: geospatial-mapping.md
+  - News & Media Monitoring: news-media.md
+  - Image & Reverse Search: image-reverse.md
+  - Video OSINT: video-osint.md
+  - Business & Company Intelligence: business-intell.md
+  - Government & Legal Records: gov-legal.md
+  - Academic & Research Databases: academic.md
+  - Automation & Recon Frameworks: automation-recon.md
+  - Intelligence Feeds: intel-feeds.md
+  - Learning Resources: learning.md
+  - AI & OSINT Assistance: ai-osint.md
+  - Reporting & Visualization: reporting-visualization.md
+  - OSINT for Good: osint-for-good.md
