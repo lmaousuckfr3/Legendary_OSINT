@@ -13,6 +13,32 @@
 - [mailtester.com](http://mailtester.com/) — Check if an email address is valid and deliverable  
 - [VerifyEmail](https://tools.verifyemailaddress.io/) — Verify the validity of an email address  
 
+### Breach hunting & Email Recon
+- [h8mail](https://github.com/khast3x/h8mail) — Email OSINT & breach-hunting tool (local breaches + commercial APIs)
+
+	h8mail searches local breach collections and a range of breach/recon APIs to find leaked credentials and related emails. It supports bulk files, gzip archives, multiprocessing, CSV/JSON output and optional API integrations (HaveIBeenPwned, Dehashed, Snusbase, Hunter, Leak-Lookup, IntelX, etc.).
+
+	Installation:
+
+	```powershell
+	pip install h8mail
+	```
+
+	Quick examples:
+
+	```powershell
+	# single target
+	h8mail -t target@example.com
+
+	# list of targets -> CSV, using config for API keys
+	h8mail -t targets.txt -c config.ini -o pwned_targets.csv
+
+	# use a local Breach Compilation folder (fast local scans)
+	h8mail -t targets.txt -bc "C:\path\to\BreachCompilation" -sk
+	```
+
+	Notes: some API lookups require API keys; use `--gen-config` to create a template config file. See the h8mail repo for advanced options and examples.
+
 ### URL and Phishing Kit Analysis
 - [urlscan.io](https://urlscan.io/) — Sandbox and visualize web requests from a URL  
 - [URLquery](http://urlquery.net) — Analyze suspicious URLs and detect malicious behavior  
