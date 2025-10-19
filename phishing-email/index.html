@@ -873,6 +873,48 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#breach-hunting-email-recon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breach hunting &amp; Email Recon
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#single-target" class="md-nav__link">
+    <span class="md-ellipsis">
+      single target
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-of-targets-csv-using-config-for-api-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      list of targets -&gt; CSV, using config for API keys
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-a-local-breach-compilation-folder-fast-local-scans" class="md-nav__link">
+    <span class="md-ellipsis">
+      use a local Breach Compilation folder (fast local scans)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="use a local Breach Compilation folder (fast local scans)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#url-and-phishing-kit-analysis" class="md-nav__link">
     <span class="md-ellipsis">
       URL and Phishing Kit Analysis
@@ -1352,6 +1394,48 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#breach-hunting-email-recon" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breach hunting &amp; Email Recon
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#single-target" class="md-nav__link">
+    <span class="md-ellipsis">
+      single target
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-of-targets-csv-using-config-for-api-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      list of targets -&gt; CSV, using config for API keys
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-a-local-breach-compilation-folder-fast-local-scans" class="md-nav__link">
+    <span class="md-ellipsis">
+      use a local Breach Compilation folder (fast local scans)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="use a local Breach Compilation folder (fast local scans)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#url-and-phishing-kit-analysis" class="md-nav__link">
     <span class="md-ellipsis">
       URL and Phishing Kit Analysis
@@ -1393,8 +1477,6 @@
   
 
 
-  <h1>Phishing & Email Investigation</h1>
-
 <h2 id="phishing-email-investigation">🎣 Phishing &amp; Email Investigation</h2>
 <p><a href="../README.md">← Back to Index</a></p>
 <h3 id="email-breach-and-reputation">Email Breach and Reputation</h3>
@@ -1409,6 +1491,26 @@
 <li><a href="https://mxtoolbox.com/EmailHeaders.aspx">MX Toolbox</a> — Email header analyzer and MX tools  </li>
 <li><a href="http://mailtester.com/">mailtester.com</a> — Check if an email address is valid and deliverable  </li>
 <li><a href="https://tools.verifyemailaddress.io/">VerifyEmail</a> — Verify the validity of an email address  </li>
+</ul>
+<h3 id="breach-hunting-email-recon">Breach hunting &amp; Email Recon</h3>
+<ul>
+<li>
+<p><a href="https://github.com/khast3x/h8mail">h8mail</a> — Email OSINT &amp; breach-hunting tool (local breaches + commercial APIs)</p>
+<p>h8mail searches local breach collections and a range of breach/recon APIs to find leaked credentials and related emails. It supports bulk files, gzip archives, multiprocessing, CSV/JSON output and optional API integrations (HaveIBeenPwned, Dehashed, Snusbase, Hunter, Leak-Lookup, IntelX, etc.).</p>
+<p>Installation:</p>
+<p><code>powershell
+pip install h8mail</code></p>
+<p>Quick examples:</p>
+<p>```powershell</p>
+<h1 id="single-target">single target</h1>
+<p>h8mail -t target@example.com</p>
+<h1 id="list-of-targets-csv-using-config-for-api-keys">list of targets -&gt; CSV, using config for API keys</h1>
+<p>h8mail -t targets.txt -c config.ini -o pwned_targets.csv</p>
+<h1 id="use-a-local-breach-compilation-folder-fast-local-scans">use a local Breach Compilation folder (fast local scans)</h1>
+<p>h8mail -t targets.txt -bc "C:\path\to\BreachCompilation" -sk
+```</p>
+<p>Notes: some API lookups require API keys; use <code>--gen-config</code> to create a template config file. See the h8mail repo for advanced options and examples.</p>
+</li>
 </ul>
 <h3 id="url-and-phishing-kit-analysis">URL and Phishing Kit Analysis</h3>
 <ul>

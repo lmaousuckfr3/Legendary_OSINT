@@ -775,6 +775,21 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#or-check-from-a-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      or check from a file
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="or check from a file">
+      <ul class="md-nav__list">
+        
           <li class="md-nav__item">
   <a href="#twitter-x" class="md-nav__link">
     <span class="md-ellipsis">
@@ -1441,6 +1456,21 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#or-check-from-a-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      or check from a file
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="or check from a file">
+      <ul class="md-nav__list">
+        
           <li class="md-nav__item">
   <a href="#twitter-x" class="md-nav__link">
     <span class="md-ellipsis">
@@ -1591,8 +1621,6 @@
   
 
 
-  <h1>People Search & Social Media</h1>
-
 <h2 id="people-search-social-media">👤 People Search &amp; Social Media</h2>
 <p><a href="../README.md">← Back to Index</a></p>
 <h3 id="cross-platform">Cross-Platform</h3>
@@ -1604,10 +1632,33 @@
 <li><a href="https://github.com/p1ngul1n0/blackbird">Blackbird</a> — Alternative username search engine  </li>
 <li><a href="https://namechk.com/">Namechk</a> — Username/domain availability  </li>
 <li><a href="https://github.com/iojw/socialscan">Socialscan</a> — Check username/email across services  </li>
-<li><a href="https://usersearch.org/">UserSearch</a> — Find usernames across forums, social, communities  </li>
-<li><a href="https://www.idcrawl.com/">IDcrawl</a> — Meta search for people across multiple social networks  </li>
-<li><a href="https://www.peekyou.com/">PeekYou</a> — Publicly available people search  </li>
-<li><a href="https://pipl.com/">Pipl</a> — Commercial people search &amp; enrichment  </li>
+<li>
+<p><a href="https://github.com/iojw/socialscan">Socialscan</a> — Accurate async username &amp; email availability scanner</p>
+<p>Socialscan queries platform registration endpoints (not just profile pages) to reduce false positives/negatives. It supports both CLI usage and a Python library API, and runs queries concurrently via asyncio for speed.</p>
+<p>Installation (pip):</p>
+<p><code>powershell
+pip install socialscan</code></p>
+<p>Quick CLI usage:</p>
+<p>```powershell
+socialscan username1 email2@example.com</p>
+<h1 id="or-check-from-a-file">or check from a file</h1>
+<p>socialscan -i input.txt --available-only --json results.json
+```</p>
+<p>As a library (sync wrapper):</p>
+<p>```python
+from socialscan.util import Platforms, sync_execute_queries</p>
+<p>queries = ["username1", "email2@gmail.com"]
+platforms = [Platforms.GITHUB, Platforms.LASTFM]
+results = sync_execute_queries(queries, platforms)
+for r in results:
+        print(r)
+```</p>
+<p>Notes: Socialscan is actively maintained and uses an MPL-2.0 license. It's a great choice when you need more accurate availability checks than simple profile-page scrapers.
+- <a href="https://usersearch.org/">UserSearch</a> — Find usernames across forums, social, communities<br />
+- <a href="https://www.idcrawl.com/">IDcrawl</a> — Meta search for people across multiple social networks<br />
+- <a href="https://www.peekyou.com/">PeekYou</a> — Publicly available people search<br />
+- <a href="https://pipl.com/">Pipl</a> — Commercial people search &amp; enrichment  </p>
+</li>
 </ul>
 <hr />
 <h3 id="twitter-x">Twitter / X</h3>
